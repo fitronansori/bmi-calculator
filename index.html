@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h2 class="text-center">Cek BMI</h2>
+
+        <p id="introText" class="text-center">
+          Masukkan Berat dan Tinggi Badan Anda
+        </p>
+
+        <form>
+          <div id="weightInput">
+            <p>Masukkan Berat Badan (KG)</p>
+            <input id="weight" type="number" pattern="[0-9]*" name="a" />
+          </div>
+          <div id="heightInput">
+            <p>Masukkan Tinggi Badan (CM)</p>
+            <input id="height" type="number" pattern="[0-9]*" name="b" />
+          </div>
+          <button type="button" class="btn" onclick="calculate()">
+            Hitung BMI
+          </button>
+        </form>
+        <div id="results" class="text-center">
+          Hasilnya akan ditampilkan disini
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
